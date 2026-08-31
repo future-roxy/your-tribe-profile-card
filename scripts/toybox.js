@@ -40,7 +40,7 @@ function reEnable(index) {
     return
   }
 
-  items[index].domElement.style.display = 'initial'
+  items[index].domElement.style.display = 'flex'; // het laatste item bleef bij 'initial' en in mijn geval breekt dat de styling. daarom heb ik display veranderd naar 'flex'
 
   setTimeout(() => { reEnable(index + 1) }, BUBBLE_DELAY)
 }
