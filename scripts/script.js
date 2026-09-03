@@ -1,9 +1,27 @@
-/* Stap 1: Selecteer de knop */
-let expandButton = document.querySelector('button')
+let ul = document.getElementById("toybox");
+let lis = ul.getElementsByTagName("li");
 
-/* Stap 2: Wacht tot iemand op die knop klikt */
-expandButton.addEventListener('click', function() {
+function assignHeader(item){
+  const number = Math.floor(Math.random() * 3);
 
-  /* Stap 3: Verander een class zodra iemand op die knop klikt */
-  document.body.classList.toggle('is-expanded')
-})
+  switch(number){
+    case 0:
+      item.classList.add("topHeader");
+      break;
+
+    case 1:
+      item.classList.add("bottomHeader");
+
+      break;
+    
+    case 2:
+      item.classList.add("leftHeader");
+
+      break;
+  }
+}
+
+for (let i = 0; i < lis.length; ++i) {
+  assignHeader(lis[i]);
+}
+

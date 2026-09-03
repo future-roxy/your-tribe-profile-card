@@ -23,8 +23,7 @@
   /* de default styling voor iedere li*/
   li{
 
-    display: flex;
-    flex-direction: column;
+    display: grid;
     align-items: center;
     text-align: center;
 
@@ -47,16 +46,30 @@
   /* specifieke styling classes voor de positie van de header" aan de boven-, onder- of linkerkant */
   /* Deze header classes moeten siblings zijn van de li's zodat ze de li regels correct overschrijven */
   .leftHeader{
-    flex-direction: row;
+    grid-template-columns: 1fr auto;
+
     
     h2{
       writing-mode: sideways-lr;
-      min-inline-size: 130px;
+      inline-size: 100%;
+      max-inline-size: 250px; /* hier moet ik een betere oplossing voor vinden: ik mag nu geen kaartjes maken die hoger zijn dan 250 pixels */
     }
   }
 
   .bottomHeader{
-      flex-direction: column-reverse;
+      /* flex-direction: column-reverse; */
+      grid-template-areas: 
+      "content"
+      "header";
+
+      h2{
+        grid-area: header;
+      }
+
+      article{
+        grid-area: content;
+      }
+      
   }
 }
 
