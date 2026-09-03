@@ -1,3 +1,8 @@
+@font-face{
+  font-family: nds;
+  src: url(../assets/fonts/Nintendo-DS-BIOS.ttf)
+}
+
 :root{
   --header-color: hotpink;
   --header-border: deeppink;
@@ -10,6 +15,8 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: nds;
+  letter-spacing: .05em;
 }
 
 body{
@@ -106,7 +113,6 @@ header{
     h2{
       writing-mode: sideways-lr;
       inline-size: 100%;
-      /* max-inline-size: 300px; */
       border-inline: 3px solid var(--header-border);
       border-block-start: 3px solid var(--header-border);
       border-radius: var(--border-radius) 0 0 var(--border-radius);
@@ -150,6 +156,11 @@ img {
   
   max-width: 90%;
   object-fit: cover; 
+}
+
+p {
+  
+  font-size: 110%;
 }
 
 li {
