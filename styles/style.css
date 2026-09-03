@@ -177,6 +177,28 @@ li {
       width: 100%;
 }
 
+.buttons {
+
+  a {
+    height: 31px; /*alle 88x31 buttons hebben een hieght van 31 pixels, dus dit is gewoon ok! ik weet niet waarom de a ietsjes groter was gemaakt*/
+    width: 88px;
+    :hover{
+      border: 3px solid var(--header-border);
+      border-radius: var(--smol-border-radius);
+    }
+  }
+
+  img {
+    height: 31px; /*alle 88x31 buttons hebben een hieght van 31 pixels, dus dit is gewoon ok! ik weet niet waarom de a ietsjes groter was gemaakt*/
+    width: 88px;
+    border: unset;
+    border-radius: unset;
+    max-width: unset;
+    object-fit: unset;
+    background-color: unset;
+  }
+}
+
 footer{
   position: fixed;
   bottom: 0;
