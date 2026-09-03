@@ -9,9 +9,9 @@
 
 #toybox { /* de container van alle random geplaatste kaartjes*/
   max-width: 100%;
-  height: 100vh;
+  height: 90vh;
   list-style: none;
-  border: 3px solid var(--header-color);
+  border-block: 3px solid deeppink;
 
   background-image: url("../assets/bg-pink.jpg");
   background-repeat: no-repeat;
@@ -73,9 +73,6 @@
   }
 }
 
-
-
-
 img {
   border-radius: 10em;
   background-color: white;
@@ -86,10 +83,11 @@ li {
   position: fixed;
 }
 
-p {
-  padding-top: 0.05em;
-}
-
 .bottomHeader h2, .topHeader h2 {
       width: 100%;
-    }
+}
+
+.credit{
+  text-align: end;
+  padding-inline-end: 1em;
+}
