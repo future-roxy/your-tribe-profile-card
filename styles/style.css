@@ -9,7 +9,7 @@
 
 #toybox { /* de container van alle random geplaatste kaartjes*/
   max-width: 100%;
-  height: 160vh;
+  height: 180vh;
   list-style: none;
   border-block: 3px solid deeppink;
 
