@@ -24,6 +24,7 @@ body{
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
+  overflow-x: hidden;
 }
 
 header{
@@ -39,13 +40,13 @@ h2 {
 }
 
 #toybox { /* de container van alle random geplaatste kaartjes*/
-  max-width: 100%;
-  height: 180vh;
+  width: 102vw;
+  height: 220vh;
   list-style: none;
 
 
   @media (min-width: 400px) {
-    height: 120vh
+    height: 140vh
   }
 
 
