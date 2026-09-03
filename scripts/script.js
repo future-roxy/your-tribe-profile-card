@@ -7,7 +7,7 @@ function assignHeader(item){
   // random nummer tussen 0 en 2
   const number = Math.floor(Math.random() * 3);
 
-  // geef de class op basis van dat nummer
+  // geef op basis van dat nummer een class
   switch(number){
     case 0:
       item.classList.add("topHeader");

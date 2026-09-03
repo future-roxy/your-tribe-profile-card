@@ -7,7 +7,7 @@
 const BUBBLE_IN = true //makes the toys come in one at a time
 const BUBBLE_DELAY = 60 // if bubbling in, how much time in miliseconds between each new toy. bigger number is slowe
 
-const PUSH_SPEED = 3 // base amount that toys push each other, bigger number means quicker stronger pushing
+const PUSH_SPEED = 4 // base amount that toys push each other, bigger number means quicker stronger pushing
 const RANDOM_START_OFFSET = 100 // random distance from center in pixels where toys are spawned inside off
 
 /// ------------
