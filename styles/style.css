@@ -39,7 +39,6 @@
     align-items: center;
     text-align: center;
     max-width: 48vw; /* de maximale grootte van een kaartje is iets minder dan 50vw zo zullen twee kaartjes altijd naast elkaar passen */
-    background-color: lightgrey;
 
     h2{
       background-color: hotpink;
@@ -48,13 +47,16 @@
     }
 
     article{
+      background-color: lightgray;
       padding-inline: 1em;
+      padding-block: .3em;
+
       block-size: 100%;
 
-      padding-block: .2em;
 
       display: flex;
       flex-direction: column;
+      align-items: center;
       justify-content: center;
       line-height: 1.2em;
     }
@@ -67,6 +69,8 @@
 
       @media (min-width: 833px) {
       max-width: 400px;
+      
+      padding-block: 1em;
         
       }
   }
