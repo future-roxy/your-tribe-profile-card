@@ -17,6 +17,7 @@
   box-sizing: border-box;
   font-family: nds;
   letter-spacing: .05em;
+	scrollbar-color: var(--header-border) white;
 }
 
 body{
@@ -40,13 +41,13 @@ h2 {
 }
 
 #toybox { /* de container van alle random geplaatste kaartjes*/
-  width: 102vw;
-  height: 220vh;
+  width: 100vw;
+  height: 100em;
   list-style: none;
 
 
   @media (min-width: 400px) {
-    height: 140vh
+    height: 180vh
   }
 
 
@@ -160,7 +161,7 @@ img {
   border-radius: 10em;
   background-color: white;
   border: 3px solid hotpink;
-  
+  min-width: 5em;
   max-width: 90%;
   object-fit: cover; 
 }
@@ -194,6 +195,7 @@ li {
     width: 88px;
     border: unset;
     border-radius: unset;
+    min-width: unset;
     max-width: unset;
     object-fit: unset;
     background-color: unset;
@@ -209,5 +211,6 @@ footer{
   background-color: white;
   text-align: end;
   padding-inline-end: 1em;
+  padding-block-end: .5em;
   z-index: 10000;
 }
