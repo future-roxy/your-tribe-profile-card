@@ -1,10 +1,13 @@
 :root{
   --header-color: hotpink;
+  --header-border: deeppink;
+  --toy-border: rgb(171, 171, 171);
 }
 
 *{
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 #toybox { /* de container van alle random geplaatste kaartjes*/
@@ -40,10 +43,20 @@
 
     h2{
       background-color: hotpink;
+      padding-inline: .2em;
+      padding-block: .1em;
     }
 
     article{
-      padding: 1em;
+      padding-inline: 1em;
+      block-size: 100%;
+
+      padding-block: .2em;
+
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      line-height: 1.2em;
     }
 
     p{
@@ -60,6 +73,19 @@
 
   /* specifieke styling classes voor de positie van de header" aan de boven-, onder- of linkerkant */
   /* Deze header classes moeten siblings zijn van de li's zodat ze de li regels correct overschrijven */
+
+  .topHeader{
+    h2{
+      border-inline: 3px solid var(--header-border);
+      border-block-start: 3px solid var(--header-border);
+    }
+
+    article{
+      border-inline: 3px solid var(--toy-border);
+      border-block-end: 3px solid var(--toy-border);
+    }
+  }
+
   .leftHeader{
     grid-template-columns: 1fr auto;
 
@@ -67,11 +93,16 @@
     h2{
       writing-mode: sideways-lr;
       inline-size: 100%;
-      max-inline-size: 300px;
+      /* max-inline-size: 300px; */
+      border-inline: 3px solid var(--header-border);
+      border-block-start: 3px solid var(--header-border);
     }
 
     article {
       max-inline-size: 150px;
+      
+      border-block: 3px solid var(--toy-border);
+      border-inline-end: 3px solid var(--toy-border);
     }
   }
 
@@ -83,10 +114,14 @@
 
       h2{
         grid-area: header;
+        border-inline: 3px solid var(--header-border);
+        border-block-end: 3px solid var(--header-border);
       }
 
       article{
         grid-area: content;
+        border-inline: 3px solid var(--toy-border);
+        border-block-start: 3px solid var(--toy-border);
       }
       
   }
