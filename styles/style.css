@@ -13,7 +13,7 @@
   list-style: none;
   border: 3px solid var(--header-color);
 
-  background-image: url("/assets/bg-pink.jpg");
+  background-image: url("../assets/bg-pink.jpg");
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: 100% 100%;
