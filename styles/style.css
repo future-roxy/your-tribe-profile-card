@@ -62,7 +62,6 @@
   /* Deze header classes moeten siblings zijn van de li's zodat ze de li regels correct overschrijven */
   .leftHeader{
     grid-template-columns: 1fr auto;
-    /* max-height: 300px; */
 
     
     h2{
@@ -97,6 +96,9 @@ img {
   border-radius: 10em;
   background-color: white;
   border: 3px solid hotpink;
+  
+  max-width: 90%;
+  object-fit: cover; 
 }
 
 li {
