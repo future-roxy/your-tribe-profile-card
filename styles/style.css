@@ -2,6 +2,8 @@
   --header-color: hotpink;
   --header-border: deeppink;
   --toy-border: rgb(171, 171, 171);
+  --border-radius: 1rem;
+  --smol-border-radius: .5rem;
 }
 
 *{
@@ -34,7 +36,6 @@
 
   /* de default styling voor iedere li*/
   li{
-
     display: grid;
     align-items: center;
     text-align: center;
@@ -82,11 +83,13 @@
     h2{
       border-inline: 3px solid var(--header-border);
       border-block-start: 3px solid var(--header-border);
+      border-radius: var(--border-radius) var(--border-radius) 0 0 ;
     }
 
     article{
       border-inline: 3px solid var(--toy-border);
       border-block-end: 3px solid var(--toy-border);
+      border-radius: 0 0 var(--smol-border-radius) var(--smol-border-radius);
     }
   }
 
@@ -100,6 +103,7 @@
       /* max-inline-size: 300px; */
       border-inline: 3px solid var(--header-border);
       border-block-start: 3px solid var(--header-border);
+      border-radius: var(--border-radius) 0 0 var(--border-radius);
     }
 
     article {
@@ -107,11 +111,11 @@
       
       border-block: 3px solid var(--toy-border);
       border-inline-end: 3px solid var(--toy-border);
+      border-radius: 0 var(--smol-border-radius) var(--smol-border-radius) 0;
     }
   }
 
   .bottomHeader{
-      /* flex-direction: column-reverse; */
       grid-template-areas: 
       "content"
       "header";
@@ -120,12 +124,14 @@
         grid-area: header;
         border-inline: 3px solid var(--header-border);
         border-block-end: 3px solid var(--header-border);
+        border-radius: 0 0 var(--border-radius) var(--border-radius);
       }
 
       article{
         grid-area: content;
         border-inline: 3px solid var(--toy-border);
         border-block-start: 3px solid var(--toy-border);
+        border-radius: var(--smol-border-radius) var(--smol-border-radius) 0 0;
       }
       
   }
