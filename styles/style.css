@@ -35,9 +35,7 @@
     display: grid;
     align-items: center;
     text-align: center;
-      max-width: 75vw;
-
-    /* max-width: 75%; */
+    max-width: 48vw; /* de maximale grootte van een kaartje is iets minder dan 50vw zo zullen twee kaartjes altijd naast elkaar passen */
     background-color: lightgrey;
 
     h2{
@@ -54,7 +52,7 @@
 
     
 
-      @media (min-width: 600px) {
+      @media (min-width: 833px) {
       max-width: 400px;
         
       }
@@ -64,12 +62,17 @@
   /* Deze header classes moeten siblings zijn van de li's zodat ze de li regels correct overschrijven */
   .leftHeader{
     grid-template-columns: 1fr auto;
+    /* max-height: 300px; */
 
     
     h2{
       writing-mode: sideways-lr;
       inline-size: 100%;
-      max-inline-size: 250px; /* hier moet ik een betere oplossing voor vinden: ik mag nu geen kaartjes maken die hoger zijn dan 250 pixels */
+      max-inline-size: 300px;
+    }
+
+    article {
+      max-inline-size: 150px;
     }
   }
 
