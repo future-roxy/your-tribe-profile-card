@@ -160,7 +160,7 @@ h2 {
 img {
   border-radius: 10em;
   background-color: white;
-  border: 3px solid hotpink;
+  border: 3px solid var(--header-border);
   min-width: 5em;
   max-width: 90%;
   object-fit: cover; 
