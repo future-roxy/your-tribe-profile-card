@@ -47,7 +47,11 @@ h2 {
 
 
   @media (min-width: 400px) {
-    height: 180vh
+    height: 79em;
+  }
+
+  @media (min-width: 800px) {
+    height: 60em;
   }
 
 
