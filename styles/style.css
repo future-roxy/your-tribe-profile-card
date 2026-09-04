@@ -29,10 +29,16 @@ body{
 }
 
 header{
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000; /* de z-index is erg hoog omdat het boven elk kaartje moet zitten */
   background-color: white;
-  width: 100vw;
-  padding-inline: 10vw;
+  width: 250px;
+  text-align: center;
   border-block-end: 3px solid var(--header-border);
+  border-inline-end: 3px solid var(--header-border);
+  border-radius: 0 0 var(--border-radius) 0;
   font-size: 1.2em;
 }
 
@@ -210,11 +216,13 @@ footer{
   position: fixed;
   bottom: 0;
   right: 0;
-  width: 100vw;
+  width: 250px;
   border-block-start: 3px solid var(--header-border);
+  border-inline-start: 3px solid var(--header-border);
+  border-radius: var(--border-radius) 0 0 0;
   background-color: white;
-  text-align: end;
+  text-align: center;
   padding-inline-end: 1em;
-  padding-block-end: .5em;
+  padding-block: .5em;
   z-index: 10000;
 }
